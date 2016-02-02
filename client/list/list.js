@@ -18,14 +18,15 @@ $(function(){
 			id = $(this)[0].id;
 
 		$('.list .items').append('<a href="javascript:void(0)" class="item" data-video="'+id+'"><figure class="thumb"><img src="http://img.youtube.com/vi/'+id+'/hqdefault.jpg" alt=""></figure><div class="title">'+title+'</div></a>');
-	
+
 	});
 
 	$('[data-video]').click(function(){
 		var id = $(this).data('video'),
 			video = '<iframe width="420" height="315" src="//www.youtube.com/embed/'+ id +'?rel=0&amp;showinfo=1&amp;autoplay=1" frameborder="0" allowfullscreen=""></iframe>';
-		
+
 		$('.player .play').html(video);
+		$('body').addClass('video-open');
 		$('.player').addClass('open');
 
 		$("html, body").animate({ scrollTop: 0 }, "slow");

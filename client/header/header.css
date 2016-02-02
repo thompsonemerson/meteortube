@@ -1,4 +1,5 @@
 .header {
+	position: relative;
 	display: block;
 	width: 100%;
 	padding: 10px 0;
@@ -55,6 +56,39 @@
 				.header .form-search button:hover .icon-search {
 					opacity: .9;
 				}
+
+	.github-corner {
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    width: 4rem;
+	    height: 4rem;
+	    color: #FFFFFF;
+	    fill: #E54D52;
+	    border: 0;
+	    z-index: 101;
+	}
+		.github-corner .octo-arm {
+		    -webkit-animation: octocat-wave 560ms infinite;
+		    -moz-animation: octocat-wave 560ms infinite;
+		    -ms-animation: octocat-wave 560ms infinite;
+		    -o-animation: octocat-wave 560ms infinite;
+		    animation: octocat-wave 560ms infinite;
+		}
+
+	.video-open .github-corner {
+		position: absolute;
+	}
+	@keyframes octocat-wave {
+		0% , 50% {
+			-webkit-transform: rotate(0);
+			transform: rotate(0);
+		}
+		25% , 75% {
+			-webkit-transform: rotate(-25deg);
+			transform: rotate(-25deg);
+		}
+	}
 
 
 
