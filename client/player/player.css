@@ -1,0 +1,82 @@
+.player {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 0;
+	border-top: 3px solid #E54D52;
+	background-color: #000000;
+	overflow: hidden;
+	-webkit-transition: all 250ms linear;
+	-moz-transition: all 250ms linear;
+	-ms-transition: all 250ms linear;
+	-o-transition: all 250ms linear;
+	transition: all 250ms linear;
+}
+.player.open{
+	height: calc(100vh - 64px);
+}
+
+	.player .btn-close {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		overflow: hidden;
+		cursor: pointer;
+		z-index: 9;
+	}
+	.player .btn-close:hover:before,
+	.player .btn-close:hover:after {
+		background-color: #E54D52;
+	}
+	.player .btn-close:before,
+	.player .btn-close:after {
+		content: '';
+		position: absolute;
+		height: 6px;
+		margin-top: -3px;
+		width: 100%;
+		top: 50%;
+		left: 0;
+		background: #FFFFFF;
+		-webkit-transition: all 150ms linear;
+		-moz-transition: all 150ms linear;
+		-ms-transition: all 150ms linear;
+		-o-transition: all 150ms linear;
+		transition: all 150ms linear;
+	}
+	.player .btn-close:before {
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	.player .btn-close:after {
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+
+	.player .wrapper-iframe {
+		position: relative;
+		padding-bottom: 52%;
+		padding-top: 30px;
+		height: 0;
+		width: 100%;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+		.player .wrapper-iframe iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			max-width: 100%;
+			height: 100%;
+		}

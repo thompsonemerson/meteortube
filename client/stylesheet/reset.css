@@ -1,0 +1,14 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	outline: none;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+img {
+	max-width: 100%;
+}

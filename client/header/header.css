@@ -1,0 +1,69 @@
+.header {
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	background-color: #FFFFFF;
+}
+	.header .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+		.header .logo {
+			display: block;
+			max-width: 200px;
+			padding: 0 15px;
+		}
+
+		.header .form-search {
+			display: inline-flex;
+			align-items: center;
+			width: 40%;
+			padding: 0 15px;
+		}
+			.header .form-search input {
+				display: block;
+				width: 100%;
+				height: 30px;
+				padding: 0 5px;
+				border: 1px solid #DDDDDD;
+				box-sizing: border-box;
+				color: #999999;
+				font-size: 14px;
+			}
+			.header .form-search button {
+				display: block;
+				width: 50px;
+				height: 30px;
+				border: 1px solid #D3D3D3;
+				background: #F8F8F8;
+				border-left: none;
+				cursor: pointer;
+			}
+			.header .form-search button:hover {
+				background-color: #F1F1F1;
+			}
+				.header .form-search button .icon-search {
+					display: block;
+					width: 14px;
+					height: 14px;
+					margin: 0 auto;
+					background: no-repeat url(//s.ytimg.com/yts/imgbin/www-hitchhiker-vfl8MN0m-.webp) -108px -1003px;
+					background-size: auto;
+					opacity: .6;
+				}
+				.header .form-search button:hover .icon-search {
+					opacity: .9;
+				}
+
+
+
+@media (max-width: 500px) {
+	.header .container {
+		flex-direction: column;
+	}
+		.header .form-search {
+			width: 90%;
+			padding: 10px 15px 0;
+		}
+}
